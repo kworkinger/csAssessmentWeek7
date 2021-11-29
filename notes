@@ -1,0 +1,5 @@
+$ node runtime.js
+Results for the extraLargeArray
+insert 1.5053429 s
+append 5.4733 ms
+
