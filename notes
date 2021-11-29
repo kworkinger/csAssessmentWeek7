@@ -3,3 +3,36 @@ Results for the extraLargeArray
 insert 1.5053429 s
 append 5.4733 ms
 
+$ node runtime.js
+Results for the tinyArray
+insert 62.1 μs
+append 146.5 μs
+
+$ node runtime.js
+Results for the smallArray
+insert 88.2 μs
+append 194 μs
+
+$ node runtime.js
+Results for the mediumArray
+insert 316.1 μs
+append 253.4 μs
+
+$ node runtime.js
+Results for the largeArray
+insert 16.8433 ms
+append 1.0695 ms
+
+Insert is faster when arrays are tiny to small. As input arrays go from medium size
+to large, extra large, and beyond - append is much faster. Depending on the application
+and how quickly you need to receive information, append or insert may be appropriate.
+Append does scale much better based on the results which indicate faster times for append.
+In the extraLargeArray example 1.5 seconds although relatively quick, is recognizable to
+humans and the 5.4 ms would be much preferred to users in almost every application. 
+
+Extra Credit:
+In other words, push is faster than unshift. Push doesn't reindex everything in the array.
+Unshift essentially requires that everything in the array is reindexed. Meaning, the array
+is copied so it's O(n). Push on the other hand is just adding to the same array. Since the
+indeces don't change in the array, there's no copy and the array is just growing so it's 
+O(1). Unshift also performs a .length operation which is O(1) and mostly negligible.
