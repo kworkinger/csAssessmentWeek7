@@ -16,7 +16,7 @@ const addToZero = (arr) => {
     return console.log(addZero)
 }
 // addToZero([1, 2, 3, -1])
-//Time: O(n^4)
+//Time: O(n^2)
 //Space: O(n)
 
 
