@@ -67,6 +67,6 @@ const findLongestWord = (arr) => {
     }
 // console.log(findLongestWord(["hi", "hello", "supercalifragilisticexpialidocious"]))
 //Time: O(n)
-//Space: O(n)
+//Space: O(n^2)
 
 
