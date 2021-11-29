@@ -17,7 +17,7 @@ const addToZero = (arr) => {
 }
 // addToZero([1, 2, 3, -1])
 //Time: O(n^2)
-//Space: O(n)
+//Space: O(n^2)
 
 
 //2
